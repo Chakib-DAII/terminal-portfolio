@@ -22,11 +22,11 @@ const eduBg = [
   },
   {
     title: "HND in Computing & System Development",
-    desc: "Info Myanmar University | 2016 - 2018",
+    desc: "Info TODO University | 2016 - 2018",
   },
   {
     title: "IELTS 6.5",
-    desc: "British Council Myanmar | 2017",
+    desc: "British Council TODO | 2017",
   },
 ];
 
