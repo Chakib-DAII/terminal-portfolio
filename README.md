@@ -100,24 +100,3 @@ npm run dev
 
 Based on the original work by Sat Naing.
 This fork is maintained by Chakib Daii for personal portfolio use.
-
----
-
-# 🔥 Why this version is better
-
-- ✔ honest (no overclaiming “heavy modifications”)
-- ✔ clearly shows ownership + fork status
-- ✔ recruiter-friendly
-- ✔ clean contribution description
-- ✔ consistent with your actual work (SEO + PWA + branding)
-
----
-
-If you want next level upgrade, I can also help you:
-
-- turn this into a **“case study README” (VERY strong for jobs)**
-- add **before/after improvements section**
-- generate **terminal GIF demo for README**
-- add **GitHub badges (stars, CI, Vercel, Lighthouse score)**
-
-Just say 👍
