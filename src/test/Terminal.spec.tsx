@@ -54,10 +54,10 @@ describe("Terminal Component", () => {
       );
     });
 
-    it("should return '/home/satnaing' when user type 'pwd' cmd", async () => {
+    it("should return '/home/daiitech' when user type 'pwd' cmd", async () => {
       await user.type(terminalInput, "pwd{enter}");
       expect(screen.getByTestId("latest-output").firstChild?.textContent).toBe(
-        "/home/satnaing"
+        "/home/daiitech"
       );
     });
 
@@ -150,18 +150,18 @@ describe("Terminal Component", () => {
       await user.type(terminalInput, "email{enter}");
       expect(window.open).toHaveBeenCalled();
       expect(screen.getByTestId("latest-output").firstChild?.textContent).toBe(
-        "contact@satnaing.dev"
+        "📧 Email: chakiibdaii@gmail.comFeel free to reach out for collaborations, open-source projects, enterprise software engineering opportunities, or discussions around distributed systems, BPM, and developer tooling."
       );
     });
 
-    const nums = [1, 2, 3, 4];
+    let nums = [1, 2, 3, 4];
     nums.forEach(num => {
       it(`should redirect to project URL when user type 'projects go ${num}' cmd`, async () => {
         await user.type(terminalInput, `projects go ${num}{enter}`);
         expect(window.open).toHaveBeenCalled();
       });
     });
-
+    nums = [1, 2];
     nums.forEach(num => {
       it(`should redirect to social media when user type 'socials go ${num}' cmd`, async () => {
         await user.type(terminalInput, `socials go ${num}{enter}`);
@@ -208,9 +208,7 @@ describe("Terminal Component", () => {
 
         // then run cmd with incorrect options
         await user.type(terminalInput, `${cmd} ${arg}{enter}`);
-        expect(window.open).toBeCalledTimes(2);
-
-        // TODO: Test theme change
+        expect(window.open).toBeCalledTimes(1);
       });
     });
   });
