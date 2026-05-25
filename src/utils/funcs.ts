@@ -134,7 +134,7 @@ export const argTab = (
 
   // 7) if input is 'socials go '
   else if (_.startsWith(inputVal, "socials go ")) {
-    ["1.Github", "2.Dev.to", "3.Facebook", "4.Instagram"].forEach(t => {
+    ["1.Github", "2.LinkedIn"].forEach(t => {
       hintsCmds = [...hintsCmds, t];
     });
     return hintsCmds;
@@ -143,10 +143,17 @@ export const argTab = (
   // 8) if input is 'projects go '
   else if (_.startsWith(inputVal, "projects go ")) {
     [
-      "1.Sat Naing's Blog",
-      "2.Haru Fashion",
-      "3.Haru API",
-      "4.AstroPaper Blog Theme",
+      "1.Naftah (نفطه) – Programming Language (JVM)",
+      "2.Naftah Built-in Provider Archetype",
+      "3.Naftah Documentation Website",
+      "4.D&A Control – MyCustoms",
+      "5.Cash In Time – Factoring System",
+      "6.Bankerise – Omnichannel Digital Banking",
+      "7.Flowable / Camunda Integration Projects",
+      "8.Omigo – WebRTC Chat System",
+      "9.Selenium Binance Automation Bot",
+      "10.Java Reflection & Code Generation Toolkit",
+      "11.Engineering & Algorithm Playground",
     ].forEach(t => {
       hintsCmds = [...hintsCmds, t];
     });
