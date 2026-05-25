@@ -13,21 +13,22 @@ import Usage from "../Usage";
 const Socials: React.FC = () => {
   const { arg, history, rerender } = useContext(termContext);
 
-  /* ===== get current command ===== */
   const currentCommand = getCurrentCmdArry(history);
 
-  /* ===== check current command makes redirect ===== */
   useEffect(() => {
     if (checkRedirect(rerender, currentCommand, "socials")) {
       socials.forEach(({ id, url }) => {
-        id === parseInt(arg[1]) && window.open(url, "_blank");
+        id === parseInt(arg[1]) && url && window.open(url, "_blank");
       });
     }
   }, [arg, rerender, currentCommand]);
 
-  /* ===== check arg is valid ===== */
   const checkArg = () =>
-    isArgInvalid(arg, "go", ["1", "2", "3", "4"]) ? (
+    isArgInvalid(
+      arg,
+      "go",
+      socials.map(s => String(s.id))
+    ) ? (
       <Usage cmd="socials" />
     ) : null;
 
@@ -35,7 +36,8 @@ const Socials: React.FC = () => {
     checkArg()
   ) : (
     <HelpWrapper data-testid="socials">
-      <ProjectsIntro>Here are my social links</ProjectsIntro>
+      <ProjectsIntro>Connect with me across platforms</ProjectsIntro>
+
       {socials.map(({ id, title, url, tab }) => (
         <CmdList key={title}>
           <Cmd>{`${id}. ${title}`}</Cmd>
@@ -43,6 +45,7 @@ const Socials: React.FC = () => {
           <CmdDesc>- {url}</CmdDesc>
         </CmdList>
       ))}
+
       <Usage cmd="socials" marginY />
     </HelpWrapper>
   );
@@ -52,26 +55,14 @@ const socials = [
   {
     id: 1,
     title: "GitHub",
-    url: "https://github.com/satnaing",
+    url: "https://github.com/Chakib-DAII",
     tab: 3,
   },
   {
     id: 2,
-    title: "Dev.to",
-    url: "https://dev.to/satnaing",
-    tab: 3,
-  },
-  {
-    id: 3,
-    title: "Facebook",
-    url: "https://www.facebook.com/satnaing.dev",
-    tab: 1,
-  },
-  {
-    id: 4,
-    title: "Instagram",
-    url: "https://instagram.com/satnaing.dev",
-    tab: 0,
+    title: "LinkedIn",
+    url: "https://www.linkedin.com/in/chakib-daii-baab0410b/",
+    tab: 2,
   },
 ];
 
