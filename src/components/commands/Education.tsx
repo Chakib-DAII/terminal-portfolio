@@ -4,7 +4,11 @@ import { Wrapper } from "../styles/Output.styled";
 const Education: React.FC = () => {
   return (
     <Wrapper data-testid="education">
-      <EduIntro>Here is my education background!</EduIntro>
+      <EduIntro>
+        My academic background, certifications, and international learning
+        experience.
+      </EduIntro>
+
       {eduBg.map(({ title, desc }) => (
         <EduList key={title}>
           <div className="title">{title}</div>
@@ -17,16 +21,32 @@ const Education: React.FC = () => {
 
 const eduBg = [
   {
-    title: "B.Sc (Hons) in Computing",
-    desc: "Edinburgh Napier University | 2018 ~ 2019",
+    title: "Software Engineering Degree",
+    desc: "Higher Institute of Applied Sciences and Technology of Sousse (ISSAT Sousse), Tunisia | 2016 – 2020 | Graduated with honors",
   },
   {
-    title: "HND in Computing & System Development",
-    desc: "Info TODO University | 2016 - 2018",
+    title: "MPI Scientific Preparatory Studies",
+    desc: "Higher Institute of Applied Sciences and Technology of Sousse (ISSAT Sousse), Tunisia | 2014 – 2016",
   },
   {
-    title: "IELTS 6.5",
-    desc: "British Council TODO | 2017",
+    title: "Computer Support Certificate",
+    desc: "South Puget Sound Community College, Olympia, Washington, USA | 2018 – 2019",
+  },
+  {
+    title: "Oracle Certified Professional: Java SE 17 Developer",
+    desc: "Oracle Certification | Professional Java Certification",
+  },
+  {
+    title: "Spring Certified Professional",
+    desc: "Spring Framework Professional Certification",
+  },
+  {
+    title: "BNB Chain Developer Specialization",
+    desc: "Binance Academy | Blockchain & Smart Contract Development",
+  },
+  {
+    title: "DeFi Deep Dive",
+    desc: "Binance Academy | Decentralized Finance & Blockchain Systems",
   },
 ];
 
