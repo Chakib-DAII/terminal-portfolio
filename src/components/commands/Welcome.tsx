@@ -14,66 +14,119 @@ const Welcome: React.FC = () => {
     <HeroContainer data-testid="welcome">
       <div className="info-section">
         <PreName>
-          {`        
-    _____       __     _   __      _            
-   / ___/____ _/ /_   / | / /___ _(_)___  ____ _
-   \\__ \\/ __ \`/ __/  /  |/ / __ \`/ / __  / __ \`/
-  ___/ / /_/ / /_   / /|  / /_/ / / / / / /_/ / 
- /____/\\__,_/\\___/ /_/ |_/\\__,_/_/_/ /_/\\__, /  
-                                       /____/   
-          `}
+          {`
+ ________  ___  ___  ________  ___  __    ___  ________     
+|\\   ____\\|\\  \\|\\  \\|\\   __  \\|\\  \\|\\  \\ |\\  \\|\\   __  \\    
+\\ \\  \\___|\\ \\  \\\\\\  \\ \\  \\|\\  \\ \\  \\/  /|\\ \\  \\ \\  \\|\\ /_   
+ \\ \\  \\    \\ \\   __  \\ \\   __  \\ \\   ___  \\ \\  \\ \\   __  \\  
+  \\ \\  \\____\\ \\  \\ \\  \\ \\  \\ \\  \\ \\  \\\\ \\  \\ \\  \\ \\  \\|\\  \\ 
+   \\ \\_______\\ \\__\\ \\__\\ \\__\\ \\__\\ \\__\\\\ \\__\\ \\__\\ \\_______\\
+    \\|_______|\\|__|\\|__|\\|__|\\|__|\\|__| \\|__|\\|__|\\|_______|
+    
+                   ________  ________  ___  ___     
+                  |\\   ___ \\|\\   __  \\|\\  \\|\\  \\    
+                  \\ \\  \\_|\\ \\ \\  \\|\\  \\ \\  \\ \\  \\   
+                   \\ \\  \\ \\\\ \\ \\   __  \\ \\  \\ \\  \\  
+                    \\ \\  \\_\\\\ \\ \\  \\ \\  \\ \\  \\ \\  \\ 
+                     \\ \\_______\\ \\__\\ \\__\\ \\__\\ \\__\\
+                      \\|_______|\\|__|\\|__|\\|__|\\|__|
+`}
         </PreName>
+
         <PreWrapper>
           <PreNameMobile>
             {`
-    ____     __          
-   / __/__ _/ /_         
-  _\\ \\/ _ \`/ __/         
- /___/\\_,_/\\__/          
-    _  __     _          
-   / |/ /__ _(_)__  ___ _
-  /    / _ \`/ / _ \\/ _ \`/
- /_/|_/\\_,_/_/_//_/\\_, / 
-                  /___/  
- 
-          `}
+   ________          __   _ __  
+  / ____/ /_  ____ _/ /__(_) /_ 
+ / /   / __ \\/ __ \`/ //_/ / __ \\
+/ /___/ / / / /_/ / ,< / / /_/ /
+\\____/_/ /_/\\__,_/_/|_/_/_.___/ 
+                                
+    ____        _ _ 
+   / __ \\____ _(_|_)
+  / / / / __ \`/ / / 
+ / /_/ / /_/ / / /  
+/_____/\\__,_/_/_/ 
+`}
           </PreNameMobile>
         </PreWrapper>
-        <div>Welcome to my terminal portfolio. (Version 1.3.1)</div>
+
+        <div>Welcome to my terminal portfolio.</div>
+
         <Seperator>----</Seperator>
+
         <div>
-          This project's source code can be found in this project's{" "}
-          <Link href="https://github.com/satnaing/terminal-portfolio">
-            GitHub repo
+          Hi, I’m <Cmd>Chakib Daii</Cmd> — Software Engineer specialized in
+          backend systems, distributed architectures, and developer tooling.
+        </div>
+
+        <div>
+          I build scalable enterprise systems using <Cmd>Java</Cmd>,{" "}
+          <Cmd>Spring Framework</Cmd>, <Cmd>Angular</Cmd>, and cloud-native
+          technologies, with strong focus on microservices, BPM workflows, and
+          automation systems.
+        </div>
+
+        <div>
+          Creator of <Cmd>Naftah (نفطه)</Cmd> — a JVM-based programming language
+          that allows coding in Arabic and Tunisian dialects to make programming
+          more accessible and inclusive.
+        </div>
+
+        <Seperator>----</Seperator>
+
+        <div>
+          This project's source code is available in the{" "}
+          <Link
+            href="https://github.com/Chakib-DAII/terminal-portfolio"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            GitHub repository
           </Link>
           .
         </div>
+
         <Seperator>----</Seperator>
+
         <div>
-          For a list of available commands, type `<Cmd>help</Cmd>`.
+          Type <Cmd>help</Cmd> to see available commands.
         </div>
       </div>
+
       <div className="illu-section">
         <PreImg>
           {`
-                       ,##,,eew,
-                     ,##############C
-                  a###############@##
-                 7####^\`^"7W7^"@####
-                 @#@b\`         ^@#@^
-                  ##^,,,,   ,,,,^#^
-                 ,,@######"#######=
-                  .''555"\` '5555b|
-                  T"@  ,,,^,mg,@,*
-                     %p||\`~~'.#\`
-                      ^Wp  ,#T
-                     :b''@@b^}
-                  ,^     \` 'b 3-
-              .<\` 'p   ^v   #   b   *.
-            {      }   #"GpGb   [
-            C      3 * @#######Nl      \`
-           '            ^@##b     ($    !
-         `}
+                         :8#8#&8@8&8&                         
+                     o&o8#@####@#####8#&*                     
+                   :8##8@@##@##888###@##88.                   
+                 &#####8####8#@#####8###@8*                   
+                &888@###@#####8@8######888                    
+                8o#8#88###8#8888#8888#8#888                   
+                &888&o&oo:***:******:*::o&88                  
+                .&&o:*****************:::o&&                  
+                 oo:******************::::o&*                 
+                 o:*:****.........*:oo*::::o                  
+                 ::*:o:*:::::****::****o::::o*                
+               **:**:::o&.*::**::oo8:&o::::**:*               
+               .*****:***:::****:********::::**               
+                :*****.**************.***:::o:                
+                 *:***...*:**..***:******::::*                
+                 ******.****:**::*******:::                   
+                   *******::**:**::****::::                   
+                   o*****:o::::::::****:::@8                  
+                   #@::::****:::***:::::o:@#8                 
+                *8&#@o::::********:::::o::@##88&*             
+            :888#@88@@ooo::::*:*::oooo:::8##########&         
+        o888####@#88#@8o:ooo:::::oo::*::o##############88:    
+   .&88##########8#88##&o:**:::::******o8##8##############8888
+  8#88###########8##88##o::***********o###888#8##############8
+  #####88##8#888#88#888##@8:::*****::#8#8888##888###888###8###
+  ##888#8#88888888888#@@@#8#@o*****##888@@@@@@@@#88888888888##
+  #888888888888888888888#@@@####:&###@@##8#8888888888888888888
+  #88888888888888888888888##@##88@###8888888888888888888888888
+  888888888888888888888888888########88#88888##888888888888#88
+`}
         </PreImg>
       </div>
     </HeroContainer>
