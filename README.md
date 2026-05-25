@@ -1,96 +1,123 @@
-# Terminal Portfolio Website by Sat Naing
+# Terminal Portfolio Website (Fork by Chakib Daii)
 
-![Terminal Portfolio Website by Sat Naing](https://user-images.githubusercontent.com/53733092/194220661-e2ff8b4c-f64a-4b64-a836-c52fae6bbcda.png)
+![Terminal Portfolio](/public/welcome-command.png)
 
 ![ts](https://badgen.net/badge/Built%20With/TypeScript/blue?style=flat-square)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/81fdb91d-c06f-46c2-b18d-dfc6f090f281/deploy-status)](https://app.netlify.com/sites/terminal-sn/deploys)
+
 ![Gitmoji](https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square)
 
-My perfolio website in terminal version developed with React, TypeScript and Styled-Components. Multiple themes supported and keyboard shortcuts can be used for some functionalities.
+---
 
-Blog Post: https://satnaing.dev/blog/posts/how-do-i-develop-my-terminal-portfolio-website-with-react
+## 🚀 About This Project
 
-## Demo
+This is a fork of the original Terminal Portfolio by [Sat Naing](https://satnaing.dev), adapted and maintained by **Chakib Daii** as a personal developer portfolio.
 
-<a href="https://www.jinno.app/redirect?from=satnaing&redirect=libary&libName=terminal-portfolio&componentName=App&libCreator=satnaing" target="_blank" rel="noopener noreferrer">Demo - try it in your editor</a>
+The goal of this fork is to:
+- Update dependencies and project setup
+- Improve SEO and metadata for better discoverability
+- Enhance PWA support (icons, manifest, maskable icons)
+- Replace content with personal projects and branding
+- Keep the original terminal-style UI and UX intact
 
-## Features
+---
 
-- Responsive Design 📱💻
+## 👤 Live Demo
+
+👉 https://chakib-daii.daiitech.org/
+
+---
+
+## ✨ Features
+
+- Terminal-style interactive UI 📱💻
 - Multiple themes 🎨
-- Autocomplete feature ✨ (TAB | Ctrl + i)
-- Go previous and next command ⬆️⬇️
-- View command history 📖
-- PWA and Offline Support 🔥
-- Well-tested ✅
+- Autocomplete (TAB / Ctrl + i)
+- Command history navigation ⬆️⬇️
+- Personal project showcase
+- PWA support (offline-ready) 🔥
+- SEO optimized (meta tags + sitemap-ready setup)
 
-## Tech Stack
+---
 
-**Frontend** - [React](https://reactjs.org/), [TypeScript](https://www.typescriptlang.org/)  
-**Styling** - [Styled-Components](https://styled-components.com/)  
-**UI/UX** - [Figma](https://figma.com/)  
-**State Management** - [ContextAPI](https://reactjs.org/docs/context.html)  
-**Testing** - [Vitest](https://vitest.dev/), [React Testing Library](https://testing-library.com/)  
-**Deployment** - [Netlify](https://app.netlify.com/)
+## 🧠 Tech Stack
 
-## Multiple Themes
+**Frontend**
+- React
+- TypeScript
+- Styled-Components
 
-<a href="https://www.jinno.app/redirect?from=satnaing&redirect=libary&libName=terminal-portfolio&componentName=App&libCreator=satnaing" target="_blank" rel="noopener noreferrer">Demo - Dark theme</a><br/>
-<a href="https://www.jinno.app/redirect?from=satnaing&redirect=libary&libName=terminal-portfolio&componentName=AppLight&libCreator=satnaing" target="_blank" rel="noopener noreferrer">Demo - light theme</a><br/>
-<a href="https://www.jinno.app/redirect?from=satnaing&redirect=libary&libName=terminal-portfolio&componentName=AppBlue&libCreator=satnaing" target="_blank" rel="noopener noreferrer">Demo - blue-matrix theme</a><br/>
-<a href="https://www.jinno.app/redirect?from=satnaing&redirect=libary&libName=terminal-portfolio&componentName=AppEspresso&libCreator=satnaing" target="_blank" rel="noopener noreferrer">Demo - espresso theme</a><br/>
-<a href="https://www.jinno.app/redirect?from=satnaing&redirect=libary&libName=terminal-portfolio&componentName=AppGreen&libCreator=satnaing" target="_blank" rel="noopener noreferrer">Demo - green-goblin theme</a><br/>
-<a href="https://www.jinno.app/redirect?from=satnaing&redirect=libary&libName=terminal-portfolio&componentName=AppUbuntu&libCreator=satnaing" target="_blank" rel="noopener noreferrer">Demo - ubuntu theme</a><br/>
+**Architecture**
+- Context API for terminal state
+- Custom command parser system
 
-Currently, this website supports 6 themes. Type `themes` in the terminal for more info.
-![terminal-portfolio-themes](https://user-images.githubusercontent.com/53733092/194221801-94f1c28b-4865-4b7f-a73e-d41132519bea.png)
+**Build Tools**
+- Vite
+- ESLint + Husky
 
-## Lighthouse Score
+**Deployment**
+- Custom domain hosting
 
-<p align="center">
-<img width="710" alt="Sat Naing Terminal Lighthouse Score" src="public/lighthouse-result.svg">
-</p>
+---
 
-## Running Locally
+## 🧪 Original Inspiration
 
-Clone the project
+This project is based on:
+
+- 🔗 [Terminal Portfolio by Sat Naing](https://satnaing.dev)
+- 🔗 https://github.com/satnaing/terminal-portfolio
+
+Other inspirations:
+
+- https://term.m4tt72.com/
+- https://fkcodes.com/
+
+---
+
+## 👨‍💻 Author
+
+### Original Creator
+- **Sat Naing** → https://satnaing.dev
+
+### Maintainer (Fork)
+- **Chakib Daii**
+- GitHub: https://github.com/Chakib-DAII
+- Portfolio: https://chakib-daii.daiitech.org
+
+---
+
+## 📦 Running Locally
 
 ```bash
-git clone https://github.com/satnaing/terminal-portfolio.git
-```
-
-Go to the project directory
-
-```bash
+git clone https://github.com/Chakib-DAII/terminal-portfolio.git
 cd terminal-portfolio
-```
-
-Remove remote origin
-
-```bash
-git remote remove origin
-```
-
-Install dependencies
-
-```bash
 npm install
-```
-
-Start the server
-
-```bash
 npm run dev
 ```
 
-## Inspiration and Credits
+---
 
-Here are some inspiration for this kind of terminal website. Only some features and functionalities are inspired by these following websites. All codes are written on my own.
+## ⚖️ License
 
-- I built this repository using [Jinno](https://www.jinno.app/redirect?from=satnaing&redirect=vs)
-- [term m4tt72](https://term.m4tt72.com/)
-- [Forrest](https://fkcodes.com/)
+Based on the original work by Sat Naing.
+This fork is maintained by Chakib Daii for personal portfolio use.
 
-## Author
+---
 
-- [@satnaing](https://satnaing.dev)
+# 🔥 Why this version is better
+
+- ✔ honest (no overclaiming “heavy modifications”)
+- ✔ clearly shows ownership + fork status
+- ✔ recruiter-friendly
+- ✔ clean contribution description
+- ✔ consistent with your actual work (SEO + PWA + branding)
+
+---
+
+If you want next level upgrade, I can also help you:
+
+- turn this into a **“case study README” (VERY strong for jobs)**
+- add **before/after improvements section**
+- generate **terminal GIF demo for README**
+- add **GitHub badges (stars, CI, Vercel, Lighthouse score)**
+
+Just say 👍
