@@ -9,7 +9,7 @@ const Email: React.FC = () => {
   /* ===== get current command ===== */
   const currentCommand = _.split(history[0], " ");
 
-  const email = "chakiibdaii@gmail.com";
+  const email = "chakiibdaii@daiitech.org";
 
   if (rerender && currentCommand[0] === "email" && currentCommand.length <= 1) {
     window.open(`mailto:${email}`, "_self");

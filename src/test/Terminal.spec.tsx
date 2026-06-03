@@ -150,7 +150,7 @@ describe("Terminal Component", () => {
       await user.type(terminalInput, "email{enter}");
       expect(window.open).toHaveBeenCalled();
       expect(screen.getByTestId("latest-output").firstChild?.textContent).toBe(
-        "📧 Email: chakiibdaii@gmail.comFeel free to reach out for collaborations, open-source projects, enterprise software engineering opportunities, or discussions around distributed systems, BPM, and developer tooling."
+        "📧 Email: chakiibdaii@daiitech.orgFeel free to reach out for collaborations, open-source projects, enterprise software engineering opportunities, or discussions around distributed systems, BPM, and developer tooling."
       );
     });
 
